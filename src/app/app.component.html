@@ -1,0 +1,14 @@
+<h2>OnInit, Onchanges and DoCheck</h2>
+<input type="text" (blur) ="update($event)"/>
+<p>Simple Form</p>
+<p>Product Name: <input type="text" [(ngModel)] = "name"/></p>
+<p>Product Price: <input type="text" [(ngModel)] = "price"/></p>
+<p><button (click) = "updateproduct()">Update Product</button></p>
+
+
+<app-child 
+[parentdata] = data
+[product] = product>
+<h2>AfterContentInit and AfterContentCheck</h2>
+<p #child> Projecting the Child Content from parent and using AfterContentInit to change its color to red</p>
+</app-child>
